@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randon Number Guess</title>
+  </head>
+  <body>
+    <h1>Random Number Guess</h1>
+    <div class="js-random-number"></div>
+    <form id="myForm">
+      <input type="number" id="inputNumber" />
+      <input type="submit" id="submitBtn" />
+    </form>
+    <button class="js-try-again">Try Again</button>
+    <div class="js-result"></div>
+    <script>
+      //randomize a number
+      function randomize() {
+        return Math.floor(Math.random() * 10 + 1);
+      }
+
+      const randomNumber = randomize();
+      //user input
+      document.getElementById("myForm").addEventListener("submit", () => {
+        event.preventDefault();
+        const inputValue = document.getElementById("inputNumber").value;
+        console.log(inputValue);
+
+        document.querySelector(".js-random-number").innerHTML = `<h3>The random number is: ${randomNumber}</h3>`;
+        if (randomNumber == inputValue) {
+          document.querySelector(".js-result").innerHTML = `<h3 style="color: green">Good job</h3>`;
+        } else {
+          document.querySelector(".js-result").innerHTML = `<h3 style="color: red">Wrong Guess</h3>`;
+        }
+      });
+
+      document.querySelector(".js-try-again").addEventListener("click", () => {
+        location.reload();
+      });
+    </script>
+  </body>
+</html>
