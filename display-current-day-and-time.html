@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISPLAY CURRENT DATE AND TIME</title>
+    <h1 class="js-print-date"></h1>
+    <h2 class="js-print-time"></h2>
+  </head>
+  <body>
+    <script>
+      const dayList = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"];
+
+      function updateDateTime() {
+        //update date
+        const today = new Date();
+        const day = today.getDay();
+
+        document.querySelector(".js-print-date").innerHTML = `Today is: ${dayList[day]}`;
+
+        //update time
+        let hours = today.getHours();
+        let mins = today.getMinutes();
+        let secs = today.getSeconds();
+        let amPm = hours >= 12 ? "PM" : "AM";
+
+        // convert to 24 hour format
+        hours = hours % 12 || 12;
+
+        //add leading zero
+        mins = mins < 10 ? `0${mins}` : mins;
+        secs = secs < 10 ? `0${secs}` : secs;
+
+        document.querySelector(".js-print-time").innerHTML = `${hours} ${amPm} : ${mins} : ${secs}`;
+      }
+
+      setInterval(updateDateTime, 1000);
+
+      updateDateTime();
+    </script>
+  </body>
+</html>
