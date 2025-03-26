@@ -10,3 +10,8 @@ Current time is : 10 PM : 30 : 38
 
 Write a JavaScript program where the program takes a random integer between 1 and 10, and the user is then prompted to input a guess number. The program displays a message "Good Work" if the input matches the guess number otherwise "Wrong guess".  
 ![image](https://github.com/user-attachments/assets/5dde2276-5fa7-46ed-bc4f-0912eac8a640)
+
+**display-jan-1-years.html**
+
+![image](https://github.com/user-attachments/assets/1446cb82-5e76-4205-a16a-7b396c6bba91)
+
