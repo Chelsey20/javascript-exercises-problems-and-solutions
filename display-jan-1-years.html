@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Years When Jan 1 is Sunday (2014 to 2050)</title>
+  </head>
+  <body>
+    <h1>Find Years When Jan 1 is Sunday (2014 to 2050)</h1>
+    <h3>Write a JavaScript program to find out if 1st January will be a Sunday between 2014 and 2050.</h3>
+    <div class="js-result"></div>
+  </body>
+  <script>
+    for (var i = 2014; i <= 2050; i++) {
+      const januaryOfTheYear = new Date(`${i}-01-01`);
+      const dayOfTheWeek = januaryOfTheYear.getDay();
+
+      if (dayOfTheWeek === 0) {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `1st January is being a Sunday: <strong>${i}</strong>`;
+        document.querySelector(".js-result").appendChild(listItem);
+      }
+    }
+  </script>
+</html>
