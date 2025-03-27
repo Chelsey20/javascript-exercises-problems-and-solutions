@@ -15,3 +15,8 @@ Write a JavaScript program where the program takes a random integer between 1 an
 
 ![image](https://github.com/user-attachments/assets/1446cb82-5e76-4205-a16a-7b396c6bba91)
 
+**DOM-retrieve-first-and-last-name.html**
+
+![image](https://github.com/user-attachments/assets/d543a305-324d-40fa-8e85-0ecaf3484549)
+
+
