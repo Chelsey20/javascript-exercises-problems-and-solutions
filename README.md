@@ -19,4 +19,9 @@ Write a JavaScript program where the program takes a random integer between 1 an
 
 ![image](https://github.com/user-attachments/assets/d543a305-324d-40fa-8e85-0ecaf3484549)
 
+**DOM-update-table-cell.html**
+
+![image](https://github.com/user-attachments/assets/7e94d7bd-d619-4cd8-8786-637ac17a0a63)
+
+
 
