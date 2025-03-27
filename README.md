@@ -23,5 +23,10 @@ Write a JavaScript program where the program takes a random integer between 1 an
 
 ![image](https://github.com/user-attachments/assets/7e94d7bd-d619-4cd8-8786-637ac17a0a63)
 
+**DOM-display-random-image.html**
+
+![image](https://github.com/user-attachments/assets/aeef9987-72a7-4184-8806-84524ab689e3)
+
+
 
 
